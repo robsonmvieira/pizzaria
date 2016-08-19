@@ -1,0 +1,289 @@
+/**,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    font-family: 'open Sans', Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+    
+    header h1{display: none;}
+    h1{font-size: 2em; font-weight: 400;}
+    h2{font-size: 1.8em; font-weight: 600;}
+    h3{font-size: 1.5em; font-weight: 800;}
+    p{ margin-bottom: 15px;}
+    ul{ list-style: none;}
+    img{border: none;max-width: 100%; vertical-align: middle;}
+    a{text-decoration: none;color: #09f;}
+    .bigtitle{display: block;font-weight: bold;color: #888;text-transform: uppercase;}
+
+
+    .container{float: left;width: 100%;}
+    .content{display: block; margin: 0 auto; padding: 40px 0; width: 80%; max-width: 1200px;}
+    .clear{clear: both;}
+    .fontzero{font-size: 0;}
+
+        .main_header{font-size: 0.875em;}
+        .main_header .content{padding: 20px 0;}
+        .menu{float: right;margin-top: 45px;}
+        #logo{float: left; margin-top: 0;}
+        .menu li{display: inline-block;}
+        .menu a{display: inline-block; padding: 10px 15px; color: #888; text-transform: uppercase;font-weight: 600;}
+        .menu a:hover{background: #444;}
+        
+
+        .meu_secundario img{width: 100%; margin-top: 1px;} 
+        .item{width: 30%;display: inline-block;margin-right: 3%;float: left;}
+        .item:nth-child(3n+0){margin-right:0%;}
+        .item h2{font-size: 1.6em;}
+        .item p{margin-top: 5px;}
+        footer{text-align: center;}
+        footer h2{font-size: 1.6em;}
+        .submenu li{text-align: center;display: inline-block;margin-top: 5px;}
+         .submenu a:hover{text-decoration: underline;}
+
+   
+    header h2{font-size: 1.8em;margin-bottom: 5px;}
+    header .tagline{margin-bottom: 10px;}
+
+
+    
+
+    
+
+
+    .article_menu{width: 30%;display: inline-block;margin-right: 3%;float: left; margin-bottom:2%;}
+    .article_menu:last-of-type{margin-right:0%;}
+    .article_menu img{ margin-bottom: 1%;margin-top: 1%;}
+    .article_menu h6{margin-bottom: 1%;font-weight: bold;}
+    .btn_cardapio{background: #09f; padding: .5%; color: #fff;font-weight: bold; cursor: pointer;}
+    */
+
+        
+
+    /*cardapio*/
+    /* RESETA PADROES - HTML5 */
+*{margin:0;padding:0}
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,button,label,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,a{border:0; outline:0; background:transparent}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,caption,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,a{vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section, a, div{display:block}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+ins,mark{background-color:#ff9;color:#000}
+a,ins{text-decoration:none}
+mark{font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+img,select{vertical-align:middle}
+a,select,textarea{font-weight:bold}
+a img{border:none!important;border:0!important}
+address{font-style:normal}
+ul{list-style:none}
+textarea{background-color:transparent!important;-webkit-appearance:none;-moz-appearance:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+a,textarea:focus,textarea:focus{outline:none!important;outline:0!important}
+hr,input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-results-button,input[type="search"]::-webkit-search-results-decoration{display:none;}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/* efeitos */
+
+a, a:hover, .anima,.anima:hover, #menu, #menu:hover{-webkit-transition:0.5s;-moz-transition:0.5s;-o-transition:0.5s}
+.arredonda { border-radius:10px;-border-radius:10px;-webkit-border-radius:10px }
+.sombra_suave { -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);box-shadow: 0 0 5px 0 rgba(0,0,0,0.1)}
+.sombra_suave:hover { -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);box-shadow: 0 0 5px 0 rgba(0,0,0,0.4)}
+
+.oculta, .oculta_elemento { position:absolute;top:-10em;left:-10em }
+.oculta, .oculta_txt { text-indent:-999em;display:block }
+
+/* containeres */
+
+body{font-family: 'open Sans', Sans-serif;background: #fff;}
+body{background: #fff;}
+.fontzero{font-size: 0em;}
+
+.centraliza { margin:0 auto; text-align:center; width:98% }
+@media only screen and (max-width : 981px){.centraliza { margin:0 auto; text-align:center; width:90%}}
+@media only screen and (min-width : 1200px){ .centraliza{ width:1200px}}
+
+.container { width:100% }
+.coluna, li { display:inline-block; position:relative }
+.fundo_verde_escuro { background-color:#060 }   
+.content{display: block; margin: 0 auto; padding: 40px 0; width: 80%; max-width: 1200px;}
+
+/* especifico */
+
+/* topo */
+
+#topo { padding: 1em 0; margin-bottom:1em; float:left }
+@media only screen and (max-width : 967px){ #topo .coluna { width:100%!important }}
+
+/* logo */
+
+    #logo { text-align:left; float:left }
+    #logo.coluna { width: 30% }
+    #logo a, #logo img { width:240px; height:109px }
+    #logo a { text-align:left }
+    
+    @media only screen and (max-width : 259px){ #logo a, #logo img { width:10em }}
+    @media only screen and (min-width : 260px) and (max-width : 967px){ #logo a, #logo img { width:13em }}
+    @media only screen and (max-width : 967px){
+        #logo { float:none; margin-bottom:20px; text-align:center }
+        #logo a, #logo img { height:auto }
+        #logo a { margin:0 auto; text-align:center }
+    }
+
+
+    /*item*/
+    .meu_secundario img{width: 100%; margin-top: 2px;} 
+        .item{width: 30%;display: inline-block;margin-right: 3%;float: left;}
+        .item:nth-child(3n+0){margin-right:0%;}
+        .item h2{font-size: 1.6em;}
+        .item p{margin-top: 5px;}
+        .bigtitle{display: block;font-weight: bold;color: #888;text-transform: uppercase;}
+
+/* menu */
+
+    #menu_principal { text-align:right; text-transform: uppercase }
+    #menu_principal.coluna { width:69% }
+    #menu_principal ul { margin-top: 60px } /* mudar este valor de acordo com a altura do logotipo, por uma questao de alinhamento */
+    #menu_principal ul li { display:inline-block }
+    #menu_principal ul li a, #menu_principal .bt_oculta a { padding: 10px 15px; color: #aaf4a8; font-weight: 600 }
+    #menu_principal ul li a { background-color:#3c953a }
+    #menu_principal ul li a:hover, #menu_principal .bt_oculta a:hover { background-color: #c9171d!important; color:#FF0!important }
+    #menu_principal .bt_oculta a { background-color: #025d02; font-size:0.7em!important; text-align:center }
+    
+    @media only screen and (max-width : 967px){
+        #menu_principal { text-align:left; background-color:#025d02 }
+        #menu_principal ul { margin-top:0; width: 100%; text-align:center; display:none }
+        #menu_principal ul li { width:100%; margin: 0 auto; text-align: center }
+        #menu_principal ul li:nth-child(even) a{ background-color:#2d732b }
+        
+        #menu_principal .bt_oculta {position: relative;top: auto;left:auto; text-indent: 0;display:block}
+    }
+    @media only screen and (min-width : 968px){ #menu_principal ul li.bt_oculta{ display:none} }
+
+/* secoes */
+
+.tit_secao{ color: #c9171d;text-transform: uppercase; text-align:left; width:100%; padding:0.5em 0.5em 1em 0.5em; margin-bottom:1.5em; border-bottom:#ccc 1px dashed }
+@media only screen and (max-width : 967px){.tit_secao{text-align:center; margin-bottom:0.5em}}
+
+/* blocos de informacoes */
+
+    .bloco_info { padding: 1em; margin:0.8em 0.3em }
+    .bloco_info .foto, .bloco_info .tit, .bloco_info .descr, .bloco_info .acao { width: 100%; text-align:center }
+    
+    /* 1 coluna */
+    
+        @media only screen and (max-width : 600px){
+            .bloco_info { margin: 0.5em 0}
+            .bloco_info.coluna { width:100% }
+        }
+
+    /* 2 colunas */
+    
+        @media only screen and (min-width : 601px) and (max-width : 800px){
+            .bloco_info.coluna { width:47% }
+        }
+        
+    /* a partir da terceira coluna */
+    
+        @media only screen and (min-width : 801px){ .bloco_info.coluna { float:left }}
+    
+    
+        /* 3 colunas */         
+            
+            @media only screen and (min-width : 801px){ .tres_cols .bloco_info.coluna { width:31% }}
+
+        /* 4 colunas */
+        
+            @media only screen and (min-width : 801px) and (max-width : 1100px){ .quatro_cols .bloco_info.coluna { width:31% }}
+            @media only screen and (min-width : 1101px){ .quatro_cols .bloco_info.coluna { width:24% }}
+    
+    
+    /* foto */
+    
+        .bloco_info img { width:100%; height:auto; max-height: 149px; max-width: 300px }
+    
+    /* titulo */
+    
+        .bloco_info .tit { color:#060; margin: 1em 0 0.5em 0}
+    
+    /* descricao */
+    
+        .bloco_info .descr { color:#666; margin: 0 0 1em 0; font-size:0.9em }
+    
+    /* area de acao */
+    
+        .bloco_info .bt_link { width: 50%; margin:0 auto; text-align:center }
+        .bloco_info .bt_link a { padding:1em; font-size:0.8em; text-transform:uppercase; background-color:#3c953a; color: #aaf4a8 }
+        .bloco_info .bt_link a:hover { background-color: #c9171d; color:#FF0 }
+        
+        @media only screen and (max-width : 350px){.bloco_info .bt_link { width: 100%}}
+        @media only screen and (min-width : 801px) and (max-width : 900px){.bloco_info .bt_link { width: 80%}}
+
+/* rodape */
+
+#rodape { float:left; padding: 1em 0; text-align:center; margin-top: 2em }
+#rodape .tit { font-size:1em; color: #aaf4a8; padding-top:1em }
+#rodape .txt { text-align:center; width:100%; color:#fff; font-size:0.7em; padding: 0 0.5em }
+
+/* redes sociais */
+
+    .redes_sociais { margin:1em 0 }
+    .redes_sociais li { padding: 0.2em 1em; border-right:#090 1px solid }
+    .redes_sociais li:last-child { border-right: none }
+    .redes_sociais a { font-size:0.8em; text-transform:uppercase; color:#fff }
+    .redes_sociais a:hover { color:#ff0;}
+    
+    @media only screen and (max-width : 329px){
+        .redes_sociais li { width:100%; padding: 0; border:#090 1px solid !important}
+        .redes_sociais a { padding: 1em }
+        .redes_sociais a:hover { background-color:#fff; color:#093 }
+    }
+
+/**/
+/*INDEX*/
+.meu_secundario{width: 100%;text-align: center;}
+.meu_secundario img{max-width: 100%; margin-bottom: 2%;}
+
+/*Box com as especialidades da Pizzaria*/
+.content{width: 100%;}
+.content h2{margin-bottom: 3px;margin-bottom: 2%; font-size: 1em;}
+.especialidade{width: 30%;display: inline-block;float: left;margin-right: 3%}
+.especialidade:nth-child(3n+0){margin-right:0%;}
+.especialidade h3{margin-bottom: 5px;margin-left: 15px;}
+.especialidade img{margin-bottom: 1%;max-width: 100%;}
+.item p{font-size:.9em;}
+/* .item{width: 30%;display: inline-block;margin-right: 3%;float: left;}
+        .item:nth-child(3n+0){margin-right:0%;}
+        .article_menu img{ margin-bottom: 1%;margin-top: 1%;}*/
+
+
+/*parte dos pedidos*/
+/*form fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 5px solid #fff;
+}*/
+
+/*Fale conosco*/
+    .fale fieldset{padding: 5px;}
+    .fale .btn{margin-bottom: 10px;}
+    .pedidos .bigtitle{margin-bottom: 10px;}
+    .compras_clear{padding: 10px;}
+    .escolhas input{margin-bottom: 10px;margin-right: 10px;}
+    .escolhas select{margin-bottom: 10px;margin-right: 10px;}
+
+.fale_conosco{width: 100%;}

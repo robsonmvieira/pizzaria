@@ -1,0 +1,130 @@
+<!doctype html>
+      <head>
+        <meta charset="utf-8"/>
+        <title>Pizzaria Menino do Rio</title>
+        <meta name="description" content="Está página é do Projeto de Bloco da faculdade INFNET">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700italic,700,800italic' title="fontes" rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/pedidos.js"></script>
+    </head>
+    <body>
+         <header id="topo" class="container fundo_verde_escuro">
+      <div class="centraliza">
+        <div id="logo" class="coluna anima">
+          <a title="Página principal da Pizzaria Menino do Rio" href="index.html">
+            <img alt="Logo da Pizzaria e Restaurante Menino do Rio" title="Ir para a página inicial da Pizzaria e Restaurante Menino do Rio" src="imagens/logo.jpg"/>
+            <h1 class="oculta">Pizzaria Menino do Rio</h1>
+          </a>
+        </div>
+        <nav id="menu_principal" class="coluna anima">
+          <h4 class="bt_oculta oculta"><a onclick="toggleMenu();" title="Clique aqui para fechar o Menu Principal" href="#">Menu Principal</a></h4>
+          <ul id="menu" class="container">
+            <li><a title="Sobre a Menino do Rio" href="empresa.html">A Empresa</a></li>
+            <li><a title="Conheça nosso cardápio" href="cardapio.html">O Cardápio</a></li>
+            <li><a title="Faça já o seu pedido" href="pedidos.html">Compras</a></li>
+            <li><a title="Entre em contato conosco" href="fale.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        <section>
+            <div class="content pedidos">
+                 <fieldset class="compras_clear">
+                 <h2 class="bigtitle">Faça Seu Pedido</h2>
+            <form action="#" id="pedidos" name="pedidos" method="post" class="escolhas">
+                  
+                <p>Escolha seu(s) prosuto(s), informe a quantidade que o sistema irá calcular o 
+                    subtotal de cada um mais o total da compra.</p><br/>
+                  <div class="bloco_produtos">
+                    <label>Pizzas:</label>
+                    <select id="tipo_pizza" name="tipo_pizza">
+                      <option value="">SELECIONE</option>
+                      <option value="calabresa">CALABRESA</option>
+                      <option value="mussarela">MUSSARELA</option>
+                      <option value="mista">MISTA</option>
+                      <option value="catupiry">CATUPIRY</option>
+                      <option value="alho">ALHO</option>
+                    </select>
+                    <input type="text" name="qtd_pizza" id="qtd_pizza" placeholder="QUANTIDADE" 
+                           value="" onkeypress="return SomenteNumero(event)" onblur="calcPrice(this.name)" maxlength="2">
+                    <input type="text" name="vlr_pizza" id="vlr_pizza" value="R$ 35.00" disabled="disabled">
+                    <input type="text" name="total_pizza" id="total_vlr_pizza" value="R$ 0.00" disabled="disabled">
+                  </div>
+                  <div class="bloco_produtos escolhas">
+                    <label>Vinhos:</label>
+                    <select id="vinho_sabor" name="vinho_sabor">
+                      <option value="">SELECIONE</option>
+                      <option value="tinto">TINTO</option>
+                      <option value="branco">BRANCO</option>
+                    </select>
+                    <input type="text" name="qtd_gfa_vinho" id="qtd_gfa_vinho" placeholder="QUANTIDADE"
+                           value="" onkeypress="return SomenteNumero(event)" onblur="calcPrice(this.name)" maxlength="2" />
+                    <input type="text" name="vlr_gfa_vinho" id="vlr_gfa_vinho" value="R$ 50.00" disabled="disabled" />
+                    <input type="text" name="total_vlr_vinho" id="total_vlr_vinho" value="R$ 0.00" disabled="disabled"/>
+                  </div>
+                  <div class="bloco_produtos">
+                        <label>Refrigerantes:</label>
+                        <select id="refrigerantes" name="refrigerantes">
+                          <option value="">SELECIONE</option>
+                          <option value="coca-cola">COCA-COLA</option>
+                          <option value="fanta">FANTA</option>
+                          <option value="pepsi">PEPSI</option>
+                          <option value="antartica">GUARANÁ ANTARTICA</option>
+                        </select>
+                        <input type="text" id="qtd_gfa_refri" name="qtd_gfa_refri" placeholder="QUANTIDADE"
+                               onkeypress="return SomenteNumero(event)" value="" onblur="calcPrice(this.name)" maxlength="2" />
+                        <input type="text" id="vlr_gfa_refri" name="vlr_gfa_refri" value="R$ 50.00" disabled="disabled" />
+                        <input type="text" id="total_vlr_refri" name="total_vlr_refri" value="R$ 0.00" disabled="disabled" />
+                  </div>
+                  <div class="bloco_produtos">
+                    <label><strong>Total:</strong></label>
+                    <input type="text" id="total_compras" name="total_compras" value="R$ 0.00" disabled="disabled" />
+                  </div>
+                    <div class="bloco_botao">
+                    <input type="button" value="Confirmar produto(s)" onClick="mostraFieldset('finaliza_compra')">
+                  </div>
+                    <h2 class="bigtitle">Dados pessoais</h2>  
+                            <div class="compras_clear escolhas">                     
+                            <p>Preencha os campos abaixo para finalizar a compra.</p>
+                            <div class="bloco_dados_ped">
+                                <label>Atendimento:</label>
+                                  <select id="atendimento">
+                                    <option>SELECIONE</option>
+                                    <option>ONLINE</option>
+                                    <option>NA ENTREGA</option>
+                                  </select>
+                            </div>
+                            <div class="bloco_dados_ped fale">
+                                <label>Número do Cartão:</label>
+                                <input type="text" name="numeroCartao" placeholder="xxxx xxxx xxxx xxxx" maxlength="12" />
+                                 <label>Telefone:</label>
+                                <input name="telefone" type="text" placeholder="(21) xxxx-xxxx" maxlength="10" />
+                                <label>Endereço:</label>
+                                <input name="endereco" type="text" placeholder="ENDEREÇO COMPLETO" />
+                                <input class="btn" type="submit" value="Finalizar compra"  onclick="finalizaCompra();" />  
+                            </div>
+                          </div>
+                          </form>
+                  </fieldset>
+
+            
+                <div class="clear"></div>
+                </div>
+        </section>
+         <footer id="rodape" class="container fundo_verde_escuro">
+      <article class="centraliza">
+        <h4 class="tit">Pizzaria Menino Do Rio</h4>
+        <nav>
+          <h4 class="oculta">Siga-nos nas Redes Sociais</h4>
+          <ul class="redes_sociais container anima">
+            <li><a href="#" rel="nofollow">Facebook</a></li>
+            <li><a href="#" rel="nofollow">Twitter</a></li>
+            <li><a href="#" rel="nofollow">LinkedIn</a></li>                                            
+          </ul>
+        </nav>
+        <p class="txt">© 2016 - Todos os direitos reservados.</p>
+      </article>
+    </footer>
+      </body>
+      </html>
